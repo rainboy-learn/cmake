@@ -1,0 +1,6 @@
+project(HELLO)
+set(lib_src hello.cpp)
+set(app_src main.cpp)
+add_library(libhello ${lib_src})
+add_executable(hello ${app_src})
+target_link_libraries(hello libhello)
